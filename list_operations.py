@@ -57,7 +57,7 @@ def last(input_list):
 
     """
 
-    return []
+    return input_list[-1]
 
 
 def init(input_list):
@@ -71,7 +71,7 @@ def init(input_list):
 
     """
 
-    return []
+    return input_list[:-1]
 
 
 ##############################################################################
@@ -90,7 +90,7 @@ def first_three(input_list):
 
     """
 
-    return []
+    return input_list[:3]
 
 
 def last_five(input_list):
@@ -104,7 +104,7 @@ def last_five(input_list):
 
     """
 
-    return []
+    return input_list[-5:]
 
 
 def middle(input_list):
@@ -118,7 +118,7 @@ def middle(input_list):
 
     """
 
-    return []
+    return input_list[2:-2]
 
 
 def inner_four(input_list):
@@ -132,7 +132,7 @@ def inner_four(input_list):
 
     """
 
-    return []
+    return input_list[2:6]
 
 
 def inner_four_end(input_list):
@@ -147,7 +147,7 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    return input_list[-6:-2]
 
 
 def replace_head(input_list):
@@ -164,7 +164,7 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list[0] = 42
 
 
 def replace_third_and_last(input_list):
@@ -181,8 +181,8 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
-
+    input_list[2], input_list[-1]  = 37, 37
+    
 
 def replace_middle(input_list):
     """
@@ -198,7 +198,7 @@ def replace_middle(input_list):
 
     """
 
-    pass
+    input_list[2:-2] = [42, 37]
 
 
 def delete_third_and_seventh(input_list):
@@ -214,8 +214,8 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
-    pass
+    del input_list[6]
+    del input_list[2]
 
 
 def delete_middle(input_list):
@@ -232,7 +232,7 @@ def delete_middle(input_list):
 
     """
 
-    pass
+    del input_list[2:-2]
 
 
 ##############################################################################
